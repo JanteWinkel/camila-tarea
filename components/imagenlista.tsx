@@ -25,7 +25,7 @@ const ImagenLista = () => {
                         </div>
                     </div>
 
-                    
+
                     <div className="md:col-span-2 my-4">
                         <img
                             src="/imagen1.jpg"
@@ -34,18 +34,18 @@ const ImagenLista = () => {
                         />
                     </div>
 
-                   
+
                 </div>
 
- <Reproductor />
-                <div className="mt-12 text-center">
+                <Reproductor />
+
+                <div className="mt-4 text-center">
                     <div className="inline-block px-6 py-4 bg-gray-50 rounded-lg shadow-sm">
                         <h3 className="text-lg font-medium text-gray-800">Información</h3>
                         <div className="mt-2 text-sm text-gray-600">
-                            <p><strong>: Camila Riera</strong>Nombre</p>
+                            <p><strong>Nombre: Camila Riera</strong></p>
                             <p>Carrera: Artes, mención Diseño Gráfico</p>
                             <p>Materia: Sociología del arte y del diseño</p>
-
                             <p>Fecha: Julio de 2025</p>
                         </div>
                     </div>
