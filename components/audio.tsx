@@ -21,21 +21,17 @@ export default function AutoPlayAudioPlayer({
 
     const handlePlay = async () => {
       try {
-        // Intenta reproducir automáticamente (puede fallar por políticas del navegador)
         await audio.play();
       } catch (err) {
         setError('El autoplay fue bloqueado. Haz clic en play para reproducir.');
         console.warn('Autoplay bloqueado:', err);
-        // Muestra los controles si el autoplay falla
         audio.controls = true;
       }
     };
 
-    // Configuración inicial
-    audio.controls = true; // Mostrar controles siempre
+    audio.controls = true; 
     audio.loop = loop;
 
-    // Intenta reproducir cuando hay suficiente datos cargados
     audio.addEventListener('loadeddata', handlePlay);
 
     return () => {

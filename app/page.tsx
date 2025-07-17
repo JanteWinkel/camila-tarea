@@ -1,7 +1,6 @@
 'use client'
 
 import ImagenLista, {  } from "@/components/imagenlista"
-import Reproductor from "@/components/reproductor"
 
 
 
@@ -11,7 +10,7 @@ export default function Home() {
       <div>
 
           <ImagenLista />
-          <Reproductor />
+          
       </div>
     </main>
   )
